@@ -13,4 +13,4 @@ addons:
 install: npm install
 script:
   - npm run build
-  - bash ./.travis-main-deploy.sh
+  - bash ./.travis-ghpages-deploy.sh
