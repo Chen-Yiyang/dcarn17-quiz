@@ -2,7 +2,6 @@
   <div id="app">
     <question v-bind:question="currentQuestion" v-on:choice="checkChoice" v-if="playing && !intermission"></question>
     <score v-bind:score="score" v-if="!playing" v-on:restart="restart()"></score>
-    <achievement v-if="intermission" v-bind:achievement="achievements[counter]" v-on:next="intermission = false"></achievement>
   </div>
 </template>
 
@@ -11,7 +10,6 @@ import data from './assets/data';
 import shuffle from './utils/shuffle';
 import Question from './components/Question.vue';
 import Score from './components/Score.vue';
-import Achievement from './components/Achievement.vue'
 
 require('material-design-lite');
 
@@ -22,15 +20,13 @@ export default {
       counter: 0,
       score: 0,
       currentQuestion: shuffle(data.questions)[0],
-      achievements: shuffle(data.achievements),
       playing: true,
       intermission: false
     }
   },
   components: {
     Question,
-    Score,
-    Achievement
+    Score
   },
   methods: {
     checkChoice (choice) {
@@ -51,7 +47,6 @@ export default {
       this.score = 0;
       this.currentQuestion = shuffle(data.questions)[0];
       this.playing = true;
-      this.achievements = shuffle(data.achievements)
     }
   }
 }
