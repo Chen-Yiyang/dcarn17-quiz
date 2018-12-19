@@ -1,6 +1,6 @@
-# dcarn17-quiz
+# based on the dcarn17-quiz from 
 
-> Quiz for D'Carn 2017
+> [https://github.com/kaine119/dcarn17-quiz](https://github.com/kaine119/dcarn17-quiz)
 
 [![Build Status](https://travis-ci.org/kaine119/dcarn17-quiz.svg?branch=master)](https://travis-ci.org/kaine119/dcarn17-quiz)
 
