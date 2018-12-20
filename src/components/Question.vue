@@ -9,10 +9,6 @@
           <h1 class="mdl-card__title-text">{{ question.text }}</h1>
         </div>
       
-        <div class="mdl-card__media" background="white" v-if="question.image !== 'noop'">
-          <img width="120" :src="loadQuestionImage(question.image)" alt="" />
-        </div>
-      
         <div id="progress" class="mdl-progress mdl-js-progress"></div>
       
         <div class="mdl-card__supporting-text mdl-card--border" v-if="!choiceChosen">
@@ -116,10 +112,6 @@
         this.correctAnswer = null;
       },
       shuffleAnswers: shuffle,
-      loadQuestionImage (name) {
-        if (name === 'noop') { return; }
-        return require("../assets/question-imgs/" + name)
-      },
       timeout () {
         this.choiceChosen = true;
         this.chosenAnswer = this.question.answers[0]
