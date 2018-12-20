@@ -1,4 +1,4 @@
-# dcarn17-quiz
+# reuse the template for dcarn17-quiz
 
 > Quiz for D'Carn 2017
 
