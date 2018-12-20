@@ -34,7 +34,7 @@ export default {
         this.score += 1; 
       }
       this.counter += 1;
-      if (!(this.counter > 2)) {
+      if (!(this.counter > 0)) {
         this.intermission = true;
         this.currentQuestion = data.questions[this.counter]
         this.currentQuestion.answers = shuffle(this.currentQuestion.answers);
