@@ -39,7 +39,7 @@ export default {
       image: "noop",
       answers: [
         { text: "codeXtremeApps Hackathon", correct: false },
-        { text: "Google-Code", correct: true },
+        { text: "Google-Code In", correct: true },
         { text: "Splash Awards", correct: false }
       ],
     },
