@@ -2,7 +2,7 @@
   <section class="mdl-grid">
     <div v-if="mainMenu" class="mdl-cell mdl-cell--1-col mdl-cell-3-col-tablet mdl-cell--1-col-phone"></div>
     <div class="mdl-cell mdl-cell--10-col mdl-shadow--2dp" id="main" v-if="mainMenu">
-      <h1>How well do you know Dunman High?</h1>
+      <h1>How well do you know Infocomm Club?</h1>
       
       <div>
         <button class="mdl-button mdl-button--raised mdl-button--colored " @click="restart()">Play</button>
